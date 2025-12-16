@@ -16,6 +16,7 @@ A jailed filesystem utility for iOS 16+, utlizing the Shortcuts application.
 - Internal App Manager: Open applications that aren't normally presented to the user. You can also view & export the bundles of those applications. This has very similar functionality to [Bridge](https://github.com/jailbreakdotparty/Bridge).
 - MobileGestalt Extractor: Extract your MobileGestalt quickly & easily with the use of two methods (Content Graph or Freeform). Getting the MobileGestalt is necessary for tools such as [Nugget](https://github.com/leminlimez/Nugget).
 - MobileGestalt Inspector: Get device details, enabled/disabled features, and more. The "Device Report" section can allow you to see what things you may have enabled on your device with [Nugget](https://github.com/leminlimez/Nugget).
+- Apple Watch Support: This tool also supports Apple Watches. However, the feature set on Apple Watch is very limited, and only allows for MobileGestalt exportation and exportation of files from a specific path (i'm not sure what's even readable, but it's probably gonna be limited to the sandbox as well).
 
 ## QoL Features
 - Favorites: Easily access any directory you'd like by favoriting it.
