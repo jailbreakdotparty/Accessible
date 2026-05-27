@@ -1,3 +1,6 @@
+>[!WARNING]
+>This project is discontinued and may not function as expected. Please do not ask for support regardng this application!
+
 # Accessible
 A jailed filesystem utility for iOS 16+, utlizing the Shortcuts application.
 
