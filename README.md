@@ -1,29 +1,26 @@
->[!WARNING]
->This project is discontinued and may not function as expected. Please do not ask for support regardng this application!
-
-# Accessible
-A jailed filesystem utility for iOS 16+, utlizing the Shortcuts application.
-
-[Latest Release](https://github.com/jailbreakdotparty/Accessible/releases/latest) • [Support Server](https://jailbreak.party/discord) • [Website](https://jailbreak.party)
+<div align="center">  
+    <h1>Accessible</h1>
+    <p>Jailed filesystem utility for iOS 16+, which uses the Shortcuts app.</p>
+    <a href="https://github.com/jailbreakdotparty/Accessible/releases/latest"><img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/jailbreakdotparty/Accessible/total?style=flat-square&color=AE51DC"></a>
+    <a href="https://github.com/jailbreakdotparty/Accessible/stargazers"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jailbreakdotparty/accessible?style=flat-square&color=%23FFD300"></a> 
+    <a href="https://jailbreak.party/discord"><img alt="Discord" src="https://img.shields.io/discord/1349128546072793218?style=flat-square&logo=discord&logoColor=FFFFFF&color=5865F2"></a> 
+    <a href="https://jailbreak.party"><img alt="Static Badge" src="https://img.shields.io/badge/jailbreak.party-blue?style=flat-square&label=%20&color=3868DB"></a>
+</div>
 
 >[!NOTE]
->This tool does **not** use any exploits, and therefore, does not give any elevated privileges. You can only read files that would usually be accessible from the sandbox.
+>This tool does **not** use any exploits, and therefore, does not give any elevated privileges. You can only read files that would usually be accessible from the sandbox, hence the key word "jailed."
 
-## Readable Partitions
-- `/System`: This directory, and almost all subfiles, are readable.
-- `/Applications`: Note that reading this directory was blocked in iOS 26.1 and later, and will not show up on those versions.
-- `/private/preboot`: This directory, and some subfiles, are readable.
+### Usage & Installation
+- Installation is easy! Just download the shortcut from the latest release tag and import it into the Shortcuts app. Then, run the Shortcut. If you're on iOS 16.0 - iOS 26.0.1, the shortcut will hang for a while during setup, as it has to fetch applications from the filesystem. Be patient!
+- Since this is a shortcut, browsing certain directories with tons of files will take a while to load, so the shortcut may become unresponsive.
 
-## Tools
-- Filesystem Browser: Browse, view, and extract files from any partitions listed in the "Readable Partitons" section.
-- Internal App Manager: Open applications that aren't normally presented to the user. You can also view & export the bundles of those applications. This has very similar functionality to [Bridge](https://github.com/jailbreakdotparty/Bridge).
-- MobileGestalt Extractor: Extract your MobileGestalt quickly & easily with the use of two methods (Content Graph or Freeform). Getting the MobileGestalt is necessary for tools such as [Nugget](https://github.com/leminlimez/Nugget).
-- MobileGestalt Inspector: Get device details, enabled/disabled features, and more. The "Device Report" section can allow you to see what things you may have enabled on your device with [Nugget](https://github.com/leminlimez/Nugget).
-- Apple Watch Support: This tool also supports Apple Watches. However, the feature set on Apple Watch is very limited, and only allows for MobileGestalt exportation and exportation of files from a specific path (i'm not sure what's even readable, but it's probably gonna be limited to the sandbox as well).
+### Features
+- Filesystem Browser
+- System App Opener & Extractor (like [Bridge](https://github.com/jailbreakdotparty/Bridge).
+- Gestalt Extractor & Inspector
+- Apple Watch Gestalt Extraction (hooray)
 
-## QoL Features
-- Favorites: Easily access any directory you'd like by favoriting it.
-
-## Troubleshooting
-- Accessible is hanging/taking too long to do something: Usually, loading some directories take a while. If it hangs for too long, simply try again. If that doesn't help, restart the Shortcuts app from the app switcher and try again.
-- The "Content Graph" method of exporting MobileGestalt isn't working: Kill the Shortcuts app from the app switcher and try again. If that doesn't work, try the freeform method instead.
+### Readable Paths
+- `/System`: This directory, and almost all subfolders, are readable.
+- `/Applications`: Fully readable **on iOS 16.0-26.0.1.**
+- `/private/preboot`: This directory, and some subfolders, are readable.
